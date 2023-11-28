@@ -385,7 +385,7 @@ CloudFront is a content delivery network (or CDN) used to distribute content to 
 
 Regional edge caches, used by default with CloudFront, are used when you have content that is not accessed frequently enough to remain in an edge location. Regional edge caches absorb this content and provide an alternative to the content having to be fetched from the origin server.
 
-## AWS Infrastructure Features
+### AWS Infrastructure Features
 
 An Availability Zone is a data center or collection of data centers. Availability Zones are connected with low-latency, high-throughput, highly redundant networking. Availability Zones are physically distinct. Each one has equipment like uninterruptible power supplies, cooling equipment, backup generators, and security, to help ensure uninterrupted operations.
 
