@@ -16,6 +16,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 8. [AWS Infrastructure Overview](/Cloud-Foundations/08-AWS-Infrastructure-Overview/README.md)
 9. [AWS Services and Service Categories](/Cloud-Foundations/09-AWS-Services-And-Service-Categories/README.md)
 10. [AWS Shared Responsibility Model](/Cloud-Foundations/10-AWS-Shared-Responsibility-Model/README.md)
+11. [AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD)
 
 ## Summary of various topics
 
@@ -43,5 +44,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 9. **[AWS services and service categories](/Cloud-Foundations/09-AWS-Services-And-Service-Categories/README.md):**  a comprehensive overview of the various service categories offered by AWS, including storage, compute, container, database, networking and content delivery, security, identity, and compliance, cost management, and management and governance services, detailing the specific services within each category and their functionalities.
 
 10. **[AWS shared responsibility model](/Cloud-Foundations/10-AWS-Shared-Responsibility-Model/README.md):** the AWS Shared Responsibility Model, which divides security responsibilities between AWS and the customer, with AWS responsible for the security of the cloud infrastructure, and customers responsible for the security of everything they put in the cloud, with responsibilities varying based on the service characteristics such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+
+11. **[AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD):**
 
 </details>
