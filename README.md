@@ -45,6 +45,6 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 
 10. **[AWS shared responsibility model](/Cloud-Foundations/10-AWS-Shared-Responsibility-Model/README.md):** the AWS Shared Responsibility Model, which divides security responsibilities between AWS and the customer, with AWS responsible for the security of the cloud infrastructure, and customers responsible for the security of everything they put in the cloud, with responsibilities varying based on the service characteristics such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
 
-11. **[AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD):**
+11. **[AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD):** is a secure, scalable, and durable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering a range of storage classes designed for different use cases and cost optimization, with pricing based on storage, requests, and data transfer.
 
 </details>
