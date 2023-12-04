@@ -26,7 +26,7 @@ AWS is a pay as you go service, thus you pay for what you use. This utility styl
 
 - **Pay less by using more:** Services such as Amazon S3, Amazon EBS, and Amazon EFS have tiered pricing, thus the more you use the less you pay. For these services they are measured using pay per GB, so the more GB you use the less you pay.
 
-- **Pay less as AWS grows:** As AWS grows they also lower pricing for their services. Since 2006 Amazon has lowered their price 75 times as they continue to grow.
+- **Pay less as AWS grows:** As AWS grows they also lower pricing for their services. Since 2006 Amazon has lowered their price 75 times as they continue to grow. This is also known as economies of scale.
 
 ## Custom pricing
 

@@ -110,7 +110,8 @@ However, for most deployments, you will want to modify the default settings so t
     | Instance Type | Use Case |
     | --- | --- |
     | General Purpose (a1, m4, m5, t2, t3) | Broad |
-    | Memory Optimized (c4, c5) | High performance |
+    | Compute Optimized (c4, c5) | High performance |
+    | Memory Optimized (r4, r5, x1, z1) | In memory databases |
     | Accelerated Computing (f1, g3, g4, p2, p3) | Machine learning |
     | Storage Optimized (d2, h1, h3) | Distributed file systems |
 
@@ -240,3 +241,82 @@ However, for most deployments, you will want to modify the default settings so t
     To connect to a Microsoft Windows instance, use the private key to obtain the administrator password.Then log in to the EC2 instance's Windows Desktop by using RemoteDesktop Protocol (RDP). To establish an SSH connection from a Windows machine to an EC2 instance, you can use a tool such as PuTTY, which will require the same private key.
 
     With Linux instances, the public key content is placed on the instance at boot time. An entry is created in ~/.ssh/authorized_keys. To log in to your Linux instance (for example, by using SSH), you must provide the private key when you establish the connection.
+
+## Amazon EC2 console view of a running EC2 instance
+
+After you choose Launch Instances and then choose View Instances, a screen opens. And these are some of the things you will see:
+
+- IP address and Domain Name System (DNS) address information
+- The instance type
+- The unique instance ID that was assigned to the instance
+- The AMI ID of the AMI that you used to launch the instance
+- The VPC ID
+- The subnet ID
+
+## Launching an EC2 instance with the AWS CLI
+
+```bash
+aws ec2 run-instances \
+--image-id ami-1a2b3c4d \
+--count 1 \
+--instance-type c3.large \
+--key-name MyKeyPair \
+--security-groups MySecurityGroup \
+--region us-east-1
+```
+
+In the example AWS CLI command, you see a single command that specifies the minimal information that is needed to launch an instance.
+
+The command includes the following information:
+
+- `aws`: Specifies an invocation of the AWS CLI
+- `ec2`: Specifies an invocation of the Amazon EC2 service command
+- `run-instances`: The subcommand that is being invoked.
+
+The rest of the command specifies several parameters, including the following:
+
+- `image-id`: This parameter is followed by an AMI ID. All AMIs have a unique AMI ID.•count–You can specify more than one.
+- `instance-type`: You can specify the instance type to create (for example a c3.large instance).
+- `key-name`: In the example, assume that `MyKeyPair` already exists.
+- `security-groups`: In this example, assume that `MySecurityGroup` already exists.
+- `region`: AMIs exist in an AWS Region, so you must specify the Region where the AWS CLI will find the AMI and launch the EC2 instance.
+
+The command should successfully create an EC2 instance if the command is properly formed, the resources that the command needs already exist, you have sufficient permissions to run the command, and you have sufficient capacity in the AWS account.
+
+If the command is successful, the API responds to the command with the instance ID and other relevant data for your application to use in subsequent API requests.
+
+## EC2 instance lifecycle
+
+- **Pending:** When an instance is first launched from an AMI, or when you start a stopped instance, it enters the pending state when the instance is booted and deployed to a host computer.
+- **Running:** When the instance is fully booted and ready, it exits the pending state and enters the running state.
+- **Rebooting:** Instead of invoking a reboot from the instance’s guest OS, AWS recommends you reboot the instance by using the Amazon EC2 console, the AWS CLI, or AWS SDKs. A rebooted instance stays on the same physical host, and it maintains the same public DNS name and public IP address. If the instance has instance store volumes, it retains the data on those volumes.
+- **Shutting down:** This state is an intermediate state between running and terminated.
+- **Terminated:** A terminated instance remains in the Amazon EC2 console for some time before the virtual machine is deleted. However, you can’t connect to or recover a terminated instance.
+- **Stopping:** Instances that are backed by AmazonEBS can be stopped. They enter the stopping state before they attain the fully stopped state.
+- **Stopped:** A stopped instance doesn’t incur the same cost as a running instance. Starting a stopped instance puts it back into the pending state, which moves the instance to a new host machine.
+
+## Amazon EC2 pricing models
+
+**Per-second billing** is available only for On-Demand Instances, Reserved Instances, and Spot Instances that run Amazon Linux or Ubuntu.
+
+- **On-Demand Instances** are eligible for the AWS Free Tier. They have the lowest upfront cost and the most flexibility, with no upfront commitments or long-term contracts. They are a good choice for applications with short-term, spiky, or unpredictable workloads.
+- **Dedicated Hosts** are physical servers with instance capacity that’s dedicated to your use. With a Dedicated Host, you can use your existing per-socket, per-core, or per-VM software licenses, such as for Microsoft Windows or Microsoft SQL Server.
+- **Dedicated Instances** are instances that run in a VPC on hardware that’s dedicated to a single customer. They are physically isolated from instances that belong to other AWS accounts at the level of the host hardware.
+- **Reserved Instances** give you the ability to reserve computing capacity for a 1-year or 3-year term, with lower hourly running costs.
+- **Scheduled Reserved Instances** give you the ability to purchase capacity reservations that recur on a daily, weekly, or monthly basis—with a specified duration—for a 1-year term. You pay for the time that the instances are scheduled even if you don’t use them.
+- **Spot Instances** give you the ability to bid on unused EC2 instances, which can lower your costs. The hourly price for a Spot Instance fluctuates depending on supply and demand. Your Spot Instance runs whenever your bid exceeds the current market price.
+
+## Amazon EC2 pricing models: Benefits
+
+- On-Demand Instances offer the most flexibility, with no long-term contract and low rates.
+- Spot Instances provide large scale at a significantly discounted price.
+- Reserved Instances are a good choice if you have predictable or steady-state compute needs. An example would be an instance that you know you want to keep running most or all the time for months or years.
+- Dedicated Hosts are a good choice when you have licensing restrictions for the software that you want to run on Amazon EC2or when you have specific compliance or regulatory requirements that prevent you from using the other deployment options.
+
+## Amazon EC2 pricing models: Use cases
+
+- On-Demand Instance pricing works well for spiky workloads, or if you need to test or run an application for only a short time(for example, during application development or testing). Sometimes, your workloads are unpredictable, and On-Demand Instances are a good choice for these cases.
+
+- Spot Instances are a good choice if your applications can tolerate interruption with a 2-minute warning notification. By default, instances are terminated, but you can configure them to stop or hibernate instead. Common use cases include fault-tolerant applications such as web servers, API backends, and big data processing. Workloads that constantly save data to persistent storage (such as Amazon S3) are also good candidates.
+- Reserved Instances are a good choice when you have long-term workloads with predictable usage patterns, such as servers that you want to run in a consistent way over many months.
+- Dedicated Hosts are a good choice when you have existing per-socket, per-core, or per-VMsoftware licenses, or when you must address specific corporate compliance and regulatory requirements.
