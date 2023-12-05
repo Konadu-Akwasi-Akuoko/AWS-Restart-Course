@@ -19,6 +19,10 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 11. [AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD)
 12. [AWS Elastic Compute](/Cloud-Foundations/12-AWS-Elastic-Compute/README.md)
 
+### Linux
+
+1. [Introduction to Linux](/Linux/01-Introduction-To-Linux/README.md)
+
 ## Summary of various topics
 
 <details>
@@ -49,5 +53,13 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 11. **[AWS S3](/Cloud-Foundations/11-AWS-S3/README.MD):** is a secure, scalable, and durable cloud storage service that allows users to store and retrieve any amount of data from anywhere on the web, offering a range of storage classes designed for different use cases and cost optimization, with pricing based on storage, requests, and data transfer.
 
 12. **[AWS Elastic Compute](/Cloud-Foundations/12-AWS-Elastic-Compute/README.md):** Amazon Elastic Compute Cloud (EC2) is a core service of AWS, providing on-demand, scalable computing capacity in the cloud. It offers several compute options and specialized solutions, with the choice depending on user needs and desired control over infrastructure.
+
+</details>
+
+<details>
+
+<summary><h3>Linux Summary</h3></summary>
+
+1. **[Introduction to Linux](/Linux/01-Introduction-To-Linux/README.md):** Linux is an open-source operating system that manages a computer's hardware and software resources, and runs applications. A Linux distribution includes the Linux kernel, daemons, applications, data files, and configuration files, and examples include Amazon Linux 2, Red Hat Enterprise Linux (RHEL), Debian, and Ubuntu.
 
 </details>
