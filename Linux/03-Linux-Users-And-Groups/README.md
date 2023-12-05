@@ -50,12 +50,12 @@ grep mmajor /etc/passwd
 
 ## The `usermod` command
 
-This command is used to modify or change parts of or a whole existing user account.
+This command is used to modify or change parts of or a whole existing user account. This also allows you to change and add a particular user to a group
 
 ## The `userdel` command
 
 - Deletes a user account
-- Uses the -r option to also delete the user's home directory
+- Uses the `-r` option to also delete the user's home directory
 
 ## The `passwd` command
 
