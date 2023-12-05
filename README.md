@@ -22,6 +22,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 ### Linux
 
 1. [Introduction to Linux](/Linux/01-Introduction-To-Linux/README.md)
+2. [Linux Command Line](/Linux/02-Linux-Command-Line/README.md)
 
 ## Summary of various topics
 
@@ -61,5 +62,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 <summary><h3>Linux Summary</h3></summary>
 
 1. **[Introduction to Linux](/Linux/01-Introduction-To-Linux/README.md):** Linux is an open-source operating system that manages a computer's hardware and software resources, and runs applications. A Linux distribution includes the Linux kernel, daemons, applications, data files, and configuration files, and examples include Amazon Linux 2, Red Hat Enterprise Linux (RHEL), Debian, and Ubuntu.
+
+2. **[Linux Command Line](/Linux/02-Linux-Command-Line/README.md):** The Linux command line is a text interface for your computer where you can run commands. It starts with a login process where your username and password are checked for authenticity. The command line includes various commands like `whoami` to display the current user, `id` to show user and group information, `hostname` to display the system's name, and others like `uptime`, `date`, `cal`, `clear`, `echo`, `history`, `touch`, `cat` which perform various functions. It also handles standard input, output, and error streams for commands, and features like tab completion and command history for ease of use.
 
 </details>
