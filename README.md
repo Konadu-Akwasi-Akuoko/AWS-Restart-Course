@@ -25,6 +25,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 2. [Linux Command Line](/Linux/02-Linux-Command-Line/README.md)
 3. [Linux Users and Groups](/Linux//03-Linux-Users-And-Groups/README.md)
 4. [Editing Files in Linux](/Linux/04-Editting-Files-In-Linux/README.md)
+5. [Working with the file system](/Linux/05-Working-With-The-File-System/README.md)
 
 ## Summary of various topics
 
@@ -69,6 +70,8 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 
 3. **[Linux Users and Groups](/Linux//03-Linux-Users-And-Groups/README.md):** Linux users and groups are managed through various commands and stored in specific files. User accounts can be created, modified, or deleted using commands like `useradd`, `usermod`, and `userdel`, with user information stored in the `/etc/passwd` file. Similarly, groups can be managed using `groupadd`, `groupmod`, and `groupdel`, with group information stored in the `/etc/group` file. Permissions and access can be controlled through these user and group settings, with root users having the most access.
 
-4. **[Editing Files in Linux](/Linux/04-Editting-Files-In-Linux/README.md):**
+4. **[Editing Files in Linux](/Linux/04-Editting-Files-In-Linux/README.md):** a comprehensive guide to editing files in Linux using Vim, Nano, and Gedit text editors. It details the different modes, commands, and effects in Vim and Nano, and mentions that Gedit is a GUI text editor with menu buttons available.
+
+5. **[Working with the file system](/Linux/05-Working-With-The-File-System/README.md):** a comprehensive guide to working with the Linux file system, emphasizing that everything in Linux is a file, including commands, hardware, and directories. It details various commands (`ls`, `more`, `less`, `head`, `tail`, `cp`, `rm`, `mkdir`, `mv`, `rmdir`, `pwd`) and their options, the Linux File System Hierarchy Standard (FHS), and the principles of Linux file names and extensions.FF
 
 </details>
