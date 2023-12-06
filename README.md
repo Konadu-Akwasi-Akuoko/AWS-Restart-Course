@@ -24,6 +24,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 1. [Introduction to Linux](/Linux/01-Introduction-To-Linux/README.md)
 2. [Linux Command Line](/Linux/02-Linux-Command-Line/README.md)
 3. [Linux Users and Groups](/Linux//03-Linux-Users-And-Groups/README.md)
+4. [Editing Files in Linux](/Linux/04-Editting-Files-In-Linux/README.md)
 
 ## Summary of various topics
 
@@ -67,5 +68,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 2. **[Linux Command Line](/Linux/02-Linux-Command-Line/README.md):** The Linux command line is a text interface for your computer where you can run commands. It starts with a login process where your username and password are checked for authenticity. The command line includes various commands like `whoami` to display the current user, `id` to show user and group information, `hostname` to display the system's name, and others like `uptime`, `date`, `cal`, `clear`, `echo`, `history`, `touch`, `cat` which perform various functions. It also handles standard input, output, and error streams for commands, and features like tab completion and command history for ease of use.
 
 3. **[Linux Users and Groups](/Linux//03-Linux-Users-And-Groups/README.md):** Linux users and groups are managed through various commands and stored in specific files. User accounts can be created, modified, or deleted using commands like `useradd`, `usermod`, and `userdel`, with user information stored in the `/etc/passwd` file. Similarly, groups can be managed using `groupadd`, `groupmod`, and `groupdel`, with group information stored in the `/etc/group` file. Permissions and access can be controlled through these user and group settings, with root users having the most access.
+
+4. **[Editing Files in Linux](/Linux/04-Editting-Files-In-Linux/README.md):**
 
 </details>

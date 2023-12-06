@@ -116,6 +116,22 @@ So, in the example `ls -l 1>folder.txt`, the `ls -l` command is being told to se
 
 In simple terms, `ls -l 1>folder.txt` is a command that tells your computer "list the detailed contents of the current folder and save it to the file `folder.txt`".
 
+### Getting to know more about the standard input and standard output
+
+The standard input and output command using `0<, 1>` in Linux is a way of telling the shell where to get the input from and where to send the output to. The `0<` means to read the input from a file or another command, and the `1>` means to write the output to a file or another command. For example, if you want to run a program called `myprog` that takes a number as input and prints its square as output, you can use the following command:
+
+```bash
+myprog 0< input.txt 1> output.txt
+```
+
+This command will read the number from a file called `input.txt` and write the square to a file called `output.txt`. You can also use the symbols `<` and `>` instead of `0<` and `1>`, as they are the default file descriptors for standard input and output. For example, the same command can be written as:
+
+```bash
+myprog < input.txt > output.txt
+```
+
+The standard input and output command using `0<, 1>` in Linux is useful when you want to automate tasks or process large amounts of data without typing or displaying them on the screen. You can also combine multiple commands using pipes (`|`) and redirections (`<`, `>`, `>>`) to create complex workflows. For more information, you can check out these web pages:
+
 ## Standard error `–stderr` command
 
 "Standard error", often abbreviated as `stderr`, is a way that a program sends out error messages. This could be error messages that you see in the terminal after running a command.
