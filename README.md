@@ -33,7 +33,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 
 1. [Introduction to Networking](/Networking/01-Introduction-To-Networking/README.md)
 2. [Networking Concepts](/Networking/02-Networking-Concepts/README.md)
-3. [Internet Protocols](/Networking/03-Internet-Protocols/)
+3. [Internet Protocols](/Networking/03-Internet-Protocols/README.md)
 
 ## Summary of various topics
 
