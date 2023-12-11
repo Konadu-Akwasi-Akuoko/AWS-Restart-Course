@@ -127,5 +127,3 @@ When troubleshooting issues, you can use commands such as netstat, ss, and telne
 - The command `netstat` confirms established connections, so if a port is blocked, it will not show as a established connection.
 - The command `telnet` confirms TCP connections to a web server, note, that this can also be used at layer 7 in the OSI model
 - The command `ss` is very similar to netstat, however, it confirms IPv4 connections only.
-
-
