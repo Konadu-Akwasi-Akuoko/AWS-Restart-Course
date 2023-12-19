@@ -84,7 +84,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 
 6. **[Working with files in Linux](/Linux/06-Working-With-FIles-In-Linux/REDME.md):** a comprehensive guide to working with files in Linux, covering various commands such as `hash`, `cksum`, `find`, `grep`, `diff`, `tar`, `gzip`, `zip`, and `unzip`. It explains how each command works, their common usages, options, and provides examples. The guide also discusses concepts like hard and symbolic links, inodes, and the differences between `grep` and `find`.
 
-7. **[Managing Linux File Permissions](/Linux/07-Managing-Linux-File-Permissions/README.md):**
+7. **[Managing Linux File Permissions](/Linux/07-Managing-Linux-File-Permissions/README.md):** a comprehensive guide on managing Linux file permissions. It explains the different types of permissions (read, write, execute), the concept of user, group, and other identities, and the default permissions for root and non-root users. It also details the usage of `chown` and `chmod` commands in Linux, including their syntax, options, and examples in both symbolic and absolute modes.
 
 </details>
 
