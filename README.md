@@ -82,7 +82,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 
 5. **[Working with the file system](/Linux/05-Working-With-The-File-System/README.md):** a comprehensive guide to working with the Linux file system, emphasizing that everything in Linux is a file, including commands, hardware, and directories. It details various commands (`ls`, `more`, `less`, `head`, `tail`, `cp`, `rm`, `mkdir`, `mv`, `rmdir`, `pwd`) and their options, the Linux File System Hierarchy Standard (FHS), and the principles of Linux file names and extensions.
 
-6. **[Working with files in Linux](/Linux/06-Working-With-FIles-In-Linux/REDME.md):**
+6. **[Working with files in Linux](/Linux/06-Working-With-FIles-In-Linux/REDME.md):** a comprehensive guide to working with files in Linux, covering various commands such as `hash`, `cksum`, `find`, `grep`, `diff`, `tar`, `gzip`, `zip`, and `unzip`. It explains how each command works, their common usages, options, and provides examples. The guide also discusses concepts like hard and symbolic links, inodes, and the differences between `grep` and `find`.
 
 7. **[Managing Linux File Permissions](/Linux/07-Managing-Linux-File-Permissions/README.md):**
 
