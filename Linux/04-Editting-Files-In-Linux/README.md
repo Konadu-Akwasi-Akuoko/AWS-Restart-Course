@@ -114,4 +114,4 @@ Nano is a common text editor in Linux, that is preinstalled on most linux distro
 
 ## The gedit text editor
 
-gedit is a GUI text editor, it have menu buttons available
+gedit is a GUI text editor, it have menu buttons available, but it is available only if GUI is installed. Thus it requires a graphical user interface such as GNOME, Xfce, or K Desktop Environment (KDE) to be installed on the Linux distribution.
