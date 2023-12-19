@@ -205,3 +205,16 @@ If a directory isn’t empty, use `rm -r <DirectoryName>`. This command removes 
 ## `pwd` command
 
 Output of the `pwd` command: Absolute path to your current location in the file system
+
+## Paths
+
+Paths define directories to be traversed to get to a particular resource. In a graphical user interface (GUI), you navigate by opening directories. In a command line interface (CLI), you also navigate through directories, but you specify them by name.
+
+## Types of Paths
+
+- **Absolute paths:** An absolute path is the complete path to the resource from the root of the file system. Example: `/home/userA/Documents/projects`
+- **Relative paths:** A relative path is the path to the resource from the current directory. Example: `Documents/projects` or `./Documents/projects`
+
+## `cd` command
+
+The change directory or `cd` command is used to move from one directory to another.
