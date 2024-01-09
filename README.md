@@ -35,6 +35,11 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 2. [Networking Concepts](/Networking/02-Networking-Concepts/README.md)
 3. [Internet Protocols](/Networking/03-Internet-Protocols/README.md)
 
+### Security
+
+1. [Introduction to Security](/Security/01-Introduction-To-Security/README.md)
+2. [Security Lifecycle: Prevention](/Security/02-Security-Lifecycle-Prevention/README.md)
+
 ## Summary of various topics
 
 <details>
@@ -97,5 +102,13 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 2. **[Networking Concepts](/Networking/02-Networking-Concepts/README.md):**
 
 3. **[Internet Protocols](/Networking/03-Internet-Protocols/):**
+
+</details>
+
+<details>
+
+<summary><h3>Security</h3></summary>
+
+1. **[Introduction to Security](/Security/01-Introduction-To-Security/README.md):**
 
 </details>
