@@ -39,6 +39,7 @@ This is a course for AWS restart. This course will let us earn an AWS practition
 
 1. [Introduction to Security](/Security/01-Introduction-To-Security/README.md)
 2. [Security Lifecycle: Prevention](/Security/02-Security-Lifecycle-Prevention/README.md)
+3. [Prevention Networking Hardening](/Security/03-Prevention-Network-Hardening/)
 
 ## Summary of various topics
 
@@ -110,5 +111,7 @@ the AWS pricing model, which is driven by compute, storage, and outbound data tr
 <summary><h3>Security</h3></summary>
 
 1. **[Introduction to Security](/Security/01-Introduction-To-Security/README.md):**
+2. **[Security Lifecycle: Prevention](/Security/02-Security-Lifecycle-Prevention/README.md):**
+3. **[Prevention Networking Hardening](/Security/03-Prevention-Network-Hardening/):**
 
 </details>
