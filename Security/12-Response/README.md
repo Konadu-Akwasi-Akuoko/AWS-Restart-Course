@@ -7,7 +7,7 @@
 - Response: Describes what you do when you detect a security threat
 - Analysis: Completes the cycle as you identify lessons learned and implement new measures to prevent the issue from occurring again in the future
 
-Response is the second phase of the security life cycle
+Response is the third phase of the security life cycle
 
 ## Event response
 
