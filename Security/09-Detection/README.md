@@ -73,5 +73,3 @@ GuardDuty detects unauthorized and unexpected activity in your AWS environment b
 - Domain Name System (DNS) logs
 
 GuardDuty extracts various fields from these logs and uses them for profiling and anomaly detection.
-
-
