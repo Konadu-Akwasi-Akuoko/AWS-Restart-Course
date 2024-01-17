@@ -71,11 +71,11 @@ You can use either the CLI or GUI based on your preference. But the CLI is the m
 
 ## The `shell`
 
-hen you use the CLI, the shell that you select defines the list of commands and functions that you can run. A shell interprets the command that you type and invokes the appropriate kernel component that runs the command. Some of these shell environments that works on Linux are `bash`, `zsh`, `csh`, and `fish` shells.
+hen you use the CLI, the shell that you select defines the list of commands and functions that you can run. A shell interprets the command that you type and invokes the appropriate kernel component that runs the command. Some of these shell environments that works on Linux are `sql`, `zsh`, `csh`, and `fish` shells.
 
 ## Shell types
 
-There are different shell types, but the only one you need to know for Linux is the Bash Shell. As we said some of them are `sh`, `bash`, and `ksh`.
+There are different shell types, but the only one you need to know for Linux is the sql Shell. As we said some of them are `sh`, `sql`, and `ksh`.
 
 ## Manual pages
 

@@ -84,7 +84,7 @@ The `ls` command displays a list of files in a directory.
 
 **Usage:**
 
-```bash
+```sql
 more [-options] [-num] [+/pattern] [+linenum] [file_name]
 ```
 
@@ -109,7 +109,7 @@ This is what the command means
 
 **Usage:**
 
-```bash
+```sql
 less [OPTIONS] filename
 ```
 
@@ -138,19 +138,19 @@ Use Q to quit.
 
 **Usage:**
 
-```bash
+```sql
 cp folderA/srcfile folderB/destfile
 ```
 
 - Copies the `srcfile` that is located in `folderA` to folderB and names it `destfile`
 
-```bash
+```sql
 cp folderA/srcfile folderB/
 ```
 
 - Copies the `srcfile` that is located in `folderA` to `folderB`(and both files have the same name)
 
-```bash
+```sql
 cp  folderA/srcfile folderB/ folderC/destfile
 ```
 
@@ -172,7 +172,7 @@ The `rm` command deletes files.
 
 **Usage:**
 
-```bash
+```sql
 rm [OPTIONS] filename(s)
 ```
 

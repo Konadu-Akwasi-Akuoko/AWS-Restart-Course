@@ -36,7 +36,7 @@ Linux stores the accounts in the `/etc/passwd` file. The `passwd` file contains 
 
 `grep` is a command that searches for a string in a file. For example, the following command displays all occurrences of the string `mmajor` in the file `/etc/passwd`:
 
-```bash
+```sql
 grep mmajor /etc/passwd
 ```
 
@@ -136,13 +136,13 @@ The command `gpasswd-a jdoe ec2-user` adds the user `jdoe` to the `ec2-user` gro
 - Examples:
   - Allow members of the users group to shut down the local host:
 
-  ```bash
+  ```sql
   %users localhost=/usr/sbin/shutdown -r now
   ```
 
   - Allow members of the devs group all actions from any host without requiring any password:
 
-   ```bash
+   ```sql
    %devs    ALL=(ALL)    NOPASSWD: ALL
    ```
 
@@ -154,14 +154,14 @@ The command `gpasswd-a jdoe ec2-user` adds the user `jdoe` to the `ec2-user` gro
 
 Both of the following commands can be used to add a user:
 
-```bash
+```sql
 [student01@server00 ~]$ sudo useradd user20
 ```
 
 - Requires the password of student01
 - student01 must be a sudoers
 
-```bash
+```sql
 [student01@server00 ~]$ su adminuser
 [adminuser@server00 student01]$ useradd user20
 ```

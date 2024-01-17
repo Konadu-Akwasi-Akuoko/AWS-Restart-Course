@@ -18,13 +18,13 @@ Linux uses two modes to configure permissions.
 
 - **Absolute mode:** Use numbers to represent file permissions. This mode is the most commonly used to set permissions. An example is
 
-```bash
+```sql
 chmod 764 file_2
 ```
 
 - **Symbolic mode:** Use a combination of letters and symbols to add permissions or to remove any set permissions.
 
-```bash
+```sql
 chmod g+w file_1
 ```
 
@@ -32,7 +32,7 @@ chmod g+w file_1
 
 The `ls -l` command is used to print out (view) the file's or directory's permissions details. Option `–l` shows the file or directory, size, modified date and time, file or folder name, and owner of a file and its permissions. The following is an example of an output of a `ls -l` command
 
-```bash
+```sql
 drwxr-xr-x  2 akwasi_akuoko akwasi_akuoko     4096 Dec  5 10:20 Downloads
 drwxr-xr-x  3 akwasi_akuoko akwasi_akuoko     4096 Dec  6 09:17 SS
 -rw-r--r--  1 akwasi_akuoko akwasi_akuoko       53 Dec  6 09:44 introtovim.md
@@ -58,7 +58,7 @@ Files and directories in a Linux system assign three types of ownership. And the
 
 The owner of the file is displayed to the right of where the permissions are displayed. The file owner controls permissions, and the permissions are set for the owner and apply to that user identity or name.
 
-```bash
+```sql
 -`rwx`------
 ```
 
@@ -68,7 +68,7 @@ In the above example the `rwx` represents the user permissions of a file.
 
 Group members are granted permissions of the group to a file or directory.
 
-```bash
+```sql
 -rwx`r-x`---
 ```
 
@@ -78,7 +78,7 @@ In the above example the `r-x` represents the group permissions of a file.
 
 Any user who is not the owner and not a member of an associated group is part of other for purposes of permissions.
 
-```bash
+```sql
 -rwx---`rw-`
 ```
 
@@ -106,7 +106,7 @@ The `chown` command is particularly useful in scenarios where administrators nee
 
 The basic syntax of the `chown` command is as follows:
 
-```bash
+```sql
 chown [options] new_owner[:new_group] file(s)
 ```
 
@@ -116,7 +116,7 @@ chown [options] new_owner[:new_group] file(s)
 
 For example, if you want to change the owner of a file named `file1.txt` to a user named `mary`, you would use:
 
-```bash
+```sql
 chown mary:root file1.txt
 ```
 
@@ -128,7 +128,7 @@ The `chmod` command in Linux is used to change the access permissions of a file 
 
 The basic syntax of the `chmod` command is as follows:
 
-```bash
+```sql
 chmod [options] mode file(s)
 ```
 
@@ -140,31 +140,31 @@ Here are some examples of how to use the `chmod` command:
 
 - To give the owner read, write, and execute permissions, and only read and execute permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 755 filename
   ```
 
 - To only give the owner read, write, and execute permissions, and no permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 700 filename
   ```
 
 - To give everyone read, write, and execute permissions, you can use:
 
-  ```bash
+  ```sql
   chmod 777 filename
   ```
 
 - To give the owner and group read and write permissions, and only read permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 664 filename
   ```
 
 - To remove all permissions from a file, you can use:
 
-  ```bash
+  ```sql
   chmod 000 filename
   ```
 
@@ -208,7 +208,7 @@ The `chmod` command in Linux is used to change the access permissions of a file 
 
 The basic syntax of the `chmod` command in absolute mode is:
 
-```bash
+```sql
 chmod [options] mode file(s)
 ```
 
@@ -228,31 +228,31 @@ Here are some examples of how to use the `chmod` command in absolute mode:
 
 - To give the owner read, write, and execute permissions, and only read and execute permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 755 filename
   ```
 
 - To only give the owner read, write, and execute permissions, and no permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 700 filename
   ```
 
 - To give everyone read, write, and execute permissions, you can use:
 
-  ```bash
+  ```sql
   chmod 777 filename
   ```
 
 - To give the owner and group read and write permissions, and only read permissions to everyone else, you can use:
 
-  ```bash
+  ```sql
   chmod 664 filename
   ```
 
 - To remove all permissions from a file, you can use:
 
-  ```bash
+  ```sql
   chmod 000 filename
   ```
 

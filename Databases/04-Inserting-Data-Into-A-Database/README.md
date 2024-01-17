@@ -22,7 +22,7 @@ Often, you might have a .csv file that must be imported into a database. It is s
 
 This statement imports data from the temporary file into the city table:
 
-```bash
+```sql
 LOAD DATA INFILE 'c:/tmp/city.csv'
 INTO TABLE cityFIELDS TERMINIATED BY ' , ' 
 ENCLOSED BY ' " ' 
@@ -32,7 +32,7 @@ IGNORE 1 ROWS;
 
 ## Exporting a CSV
 
-```bash
+```sql
 SELECT id, name, countrycode FROM city
 INTO OUTFILE '/tmp/mysqlfiles/city.csv'
 FIELDS TERMINATED BY ','

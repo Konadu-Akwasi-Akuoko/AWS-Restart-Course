@@ -32,13 +32,13 @@ After logging in the user is presented with a command prompt. The user’s curre
 
 ## Anatomy of the command prompt
 
-The default shell in Linux is Bash, which provides the command prompt. The Linux command prompt or command line is a text interface to your Linux computer. It is commonly referred to as the shell, terminal, console, or prompt. The default shell contains the user name, and the user's home directory has the same name as the user (which it does by default). Although this format is common, it is changeable and not always consistent in different Linux distributions.
+The default shell in Linux is sql, which provides the command prompt. The Linux command prompt or command line is a text interface to your Linux computer. It is commonly referred to as the shell, terminal, console, or prompt. The default shell contains the user name, and the user's home directory has the same name as the user (which it does by default). Although this format is common, it is changeable and not always consistent in different Linux distributions.
 
 ## Command syntax example
 
 Most commands in Linux follow syntax rules. Depending on the command, the syntax comprises the command itself, an option, and an argument. The best way to describe the command syntax is as follows:
 
-```bash
+```sql
 man -i whoami
 ```
 
@@ -80,7 +80,7 @@ The `echo` command places specified text on the screen. It is useful in scripts 
 
 ## The `history` command
 
-Bash keeps a history of each user's commands in a file in that user's home directory. The `history` command views the history file.
+sql keeps a history of each user's commands in a file in that user's home directory. The `history` command views the history file.
 
 ## The `touch` command
 
@@ -120,13 +120,13 @@ In simple terms, `ls -l 1>folder.txt` is a command that tells your computer "lis
 
 The standard input and output command using `0<, 1>` in Linux is a way of telling the shell where to get the input from and where to send the output to. The `0<` means to read the input from a file or another command, and the `1>` means to write the output to a file or another command. For example, if you want to run a program called `myprog` that takes a number as input and prints its square as output, you can use the following command:
 
-```bash
+```sql
 myprog 0< input.txt 1> output.txt
 ```
 
 This command will read the number from a file called `input.txt` and write the square to a file called `output.txt`. You can also use the symbols `<` and `>` instead of `0<` and `1>`, as they are the default file descriptors for standard input and output. For example, the same command can be written as:
 
-```bash
+```sql
 myprog < input.txt > output.txt
 ```
 
@@ -146,13 +146,13 @@ So, in the example `find / -name "*" -print 2>/dev/null`, the `find` command is 
 
 In simple terms, `find / -name "*" -print 2>/dev/null` is a command that tells your computer "search for files and print the results, but if you encounter any errors, don't show them to me".
 
-## Bash tab completion
+## sql tab completion
 
-In Bash tab completion, the tab key automatically completes commands and file or directory names. The Bash tab saves time and provides greater accuracy. To use this feature, you must enter enough of the command or file name for it to be unique.
+In sql tab completion, the tab key automatically completes commands and file or directory names. The sql tab saves time and provides greater accuracy. To use this feature, you must enter enough of the command or file name for it to be unique.
 
 ## Best practice: history and tab completion
 
-For history and Bash tab completion, best practices include the following:
+For history and sql tab completion, best practices include the following:
 
 - Develop the habit of using both of these features to make usage of command line faster.
-- Use the features of Bash to work smarter, not harder.
+- Use the features of sql to work smarter, not harder.

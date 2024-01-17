@@ -2,7 +2,7 @@
 
 ## The `hash` command
 
-The `hash` command in Linux is used to remember or report the full pathnames of commands that have been previously executed. It is a built-in command in many shell environments like bash, zsh, and more.
+The `hash` command in Linux is used to remember or report the full pathnames of commands that have been previously executed. It is a built-in command in many shell environments like sql, zsh, and more.
 
 When you execute a command in the shell, the system searches for the command in directories specified in the `PATH` environment variable. Once it finds the command, it stores the command's full pathname in a hash table to quickly locate it next time.
 
@@ -30,7 +30,7 @@ The `cksum` command is particularly useful when you've downloaded a file or rece
 
 The usage of this command is quite simple. You just pass the file name as an argument to the `cksum` command, and it will print the corresponding CRC checksum and the number of bytes in the file. Here's an example:
 
-```bash
+```sql
 cksum file1
 ```
 
@@ -45,7 +45,7 @@ The `find` command in Linux is used to search and locate the list of files and d
 
 The basic syntax of the `find` command is:
 
-```bash
+```sql
 find [where to start searching from] [expression determines what to find] [-options] [what to find]
 ```
 
@@ -61,13 +61,13 @@ Here are some examples:
 
 - To find all regular files in the current directory, you can use:
 
-  ```bash
+  ```sql
   find . -type f
   ```
 
 - To find all directories in the current directory, you can use:
 
-  ```bash
+  ```sql
   find . -type d
   ```
 
@@ -133,7 +133,7 @@ Remember to replace "searchterm", "pattern1", "pattern2", and "file" with your a
 
 Here's the basic syntax of the `grep` command:
 
-```bash
+```sql
 grep [options] pattern [file...]
 ```
 
@@ -145,43 +145,43 @@ Here are some examples of how to use the `grep` command:
 
 - To search for the pattern "hello" in a file named `file.txt`, you would use:
 
-```bash
+```sql
 grep "hello" file.txt
 ```
 
 - To perform a case-insensitive search for "hello" in `file.txt`, use the `-i` option:
 
-```bash
+```sql
 grep -i "hello" file.txt
 ```
 
 - To search for "hello" in `file.txt` and display line numbers with the matching lines, use the `-n` option:
 
-```bash
+```sql
 grep -n "hello" file.txt
 ```
 
 - To search for lines that do not contain "hello" in `file.txt`, use the `-v` option:
 
-```bash
+```sql
 grep -v "hello" file.txt
 ```
 
 - To search for the whole word "hello" (not part of a word like "helloing" or "ohello") in `file.txt`, use the `-w` option:
 
-```bash
+```sql
 grep -w "hello" file.txt
 ```
 
 - To search for "hello" in all `.txt` files in the current directory, you could use:
 
-```bash
+```sql
 grep "hello" *.txt
 ```
 
 - To search for "hello" in all files in the current directory and its subdirectories, use the `-r` (or `-R`) option:
 
-```bash
+```sql
 grep -r "hello" .
 ```
 
@@ -204,7 +204,7 @@ The `diff` command in Linux is used to compare the contents of two files line by
 
 The basic syntax of the `diff` command is as follows:
 
-```bash
+```sql
 diff [options] file1 file2
 ```
 
@@ -212,7 +212,7 @@ Here, `file1` and `file2` are the two files you want to compare. The `options` p
 
 Here's an example of how you might use the `diff` command:
 
-```bash
+```sql
 diff file1.txt file2.txt
 ```
 
@@ -240,13 +240,13 @@ Directories are lists of names assigned to inodes. A directory contains an entry
 
 The syntax for creating a hard link is:
 
-```bash
+```sql
 ln source_file link_name
 ```
 
 Here, `source_file` is the file you want to create a link to, and `link_name` is the name of the new hard link. For example:
 
-```bash
+```sql
 ln file1.txt link_to_file1
 ```
 
@@ -260,13 +260,13 @@ This command creates a hard link named `link_to_file1` to `file1.txt`.
 
 The syntax for creating a symbolic link is:
 
-```bash
+```sql
 ln -s source_file link_name
 ```
 
 Here, `source_file` is the file (or directory) you want to create a link to, and `link_name` is the name of the new symbolic link. The `-s` option tells `ln` to create a symbolic link. For example:
 
-```bash
+```sql
 ln -s file1.txt symlink_to_file1
 ```
 
@@ -280,7 +280,7 @@ The `tar` command in Linux stands for tape archive, and it's used to create, mai
 
 Here is the basic syntax of the `tar` command:
 
-```bash
+```sql
 tar [options] [archive-file] [file or directory to be archived]
 ```
 
@@ -300,25 +300,25 @@ Here are some examples of how to use the `tar` command:
 
 - To create a tar archive file named `archive.tar` containing a directory named `dir1`, you would use:
 
-  ```bash
+  ```sql
   tar -cvf archive.tar dir1
   ```
 
 - To extract the files from `archive.tar`, you would use:
 
-  ```bash
+  ```sql
   tar -xvf archive.tar
   ```
 
 - To create a gzipped tar archive named `archive.tar.gz`, you would use:
 
-  ```bash
+  ```sql
   tar -cvzf archive.tar.gz dir1
   ```
 
 - To extract a gzipped tar archive named `archive.tar.gz`, you would use:
 
-  ```bash
+  ```sql
   tar -xvzf archive.tar.gz
   ```
 
@@ -328,7 +328,7 @@ The `gzip` command in Linux is used to compress **files**. The name `gzip` stand
 
 The basic syntax of the `gzip` command is:
 
-```bash
+```sql
 gzip [options] [file...]
 ```
 
@@ -338,7 +338,7 @@ Here are some examples of how to use the `gzip` command:
 
 - To compress a file named `file1.txt`, you would use:
 
-  ```bash
+  ```sql
   gzip file1.txt
   ```
 
@@ -346,7 +346,7 @@ Here are some examples of how to use the `gzip` command:
 
 - To keep the original file while compressing, you would use the `-k` option:
 
-  ```bash
+  ```sql
   gzip -k file1.txt
   ```
 
@@ -354,7 +354,7 @@ Here are some examples of how to use the `gzip` command:
 
 - To decompress a file, you would use the `-d` option:
 
-  ```bash
+  ```sql
   gzip -d file1.txt.gz
   ```
 
@@ -370,13 +370,13 @@ Here's how you can use these commands:
 
 The `zip` command is used to compress files and directories into a zip file. The basic syntax is:
 
-```bash
+```sql
 zip [options] archive_name file_or_directory_to_compress
 ```
 
 For example, to compress a directory named `dir1` into a zip file named `archive.zip`, you would use:
 
-```bash
+```sql
 zip -r archive.zip dir1
 ```
 
@@ -386,13 +386,13 @@ In this command, the `-r` option tells `zip` to operate recursively, which means
 
 The `unzip` command is used to extract the contents of a zip file. The basic syntax is:
 
-```bash
+```sql
 unzip archive_name
 ```
 
 For example, to extract the contents of a zip file named `archive.zip`, you would use:
 
-```bash
+```sql
 unzip archive.zip
 ```
 

@@ -6,7 +6,7 @@ You use the SELECT statement to select one or more columns from a table. You can
 
 ## How it works
 
-```bash
+```sql
 SELECTid, name, countrycode, FROM city WHERE countrycode ='BRA’;
 ```
 
@@ -48,14 +48,14 @@ For this example, the following is the request: Get all the data from the cityta
 
 The SQL query is as follows:
 
-```bash
+```sql
 SELECT id, name, countrycode 
 FROM city WHERE countrycode='BRA’
 ```
 
 ## Optional clauses of the SELECT statement: GROUP BY
 
-```bash
+```sql
 SELECTcontinent, COUNT(*) FROM country GROUP BY continent;
 ```
 
@@ -65,7 +65,7 @@ Notice that the GROUP BY clause typically requires an aggregate function in the 
 
 ## Optional clauses of the SELECT statement: HAVING
 
-```bash
+```sql
 SELECT continent, COUNT(*) FROM country 
 GROUP BY continent HAVING COUNT(*) > 1;
 ```
@@ -74,7 +74,7 @@ The HAVING clause filters the results of a GROUP BYclause in a SELECTstatement. 
 
 ## Optional clauses of the SELECT statement: ORDER BY
 
-```bash
+```sql
 SELECT id, name, countrycode FROM city ORDER BY id;
 ```
 

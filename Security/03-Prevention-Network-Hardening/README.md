@@ -48,7 +48,7 @@ Port scanning is a method that attackers use to determine which protocols and se
 
 You can use Nmap to determine which IP protocols are supported by a network device or host.
 
-```bash
+```sql
 nmap konadu.dev
 ```
 
