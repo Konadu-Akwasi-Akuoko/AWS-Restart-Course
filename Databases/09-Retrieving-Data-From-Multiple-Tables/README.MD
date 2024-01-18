@@ -87,5 +87,3 @@ ON ci.CountryCode=co.Code
 You'll notice in this example that both tables include the Name column. When developing queries, columns with the same name in two different tables can create confusion. To avoid this confusion, use a qualifier with the column name to identify the source table.
 
 A qualifier for a column name can be a table name, an alias name, a synonym, or a correlating name. To use a qualified column name, use the following format: `Table or alias name.column name`
-
-
