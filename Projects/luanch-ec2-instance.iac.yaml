@@ -8,7 +8,7 @@ Resources:
   MyVPC:
     Type: AWS::EC2::VPC
     Properties:
-      CidrBlock: 10.0.0.0/16
+      CidrBlock: 192.168.0.0/16
       EnableDnsSupport: true
       EnableDnsHostnames: true
       InstanceTenancy: default
@@ -94,7 +94,6 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      KeyName: key-0828ba6dfa18c7c49
       ImageId: ami-0e5f882be1900e43b
       NetworkInterfaces:
         - AssociatePublicIpAddress: true
