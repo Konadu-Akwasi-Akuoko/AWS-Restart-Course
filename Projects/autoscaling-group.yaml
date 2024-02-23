@@ -91,6 +91,7 @@ Resources:
       SecurityGroupEgress:
         - IpProtocol: '-1'
           CidrIp: 0.0.0.0/0
+# This is not supported anymore, so I need to rewrite it using EC2 LaunchTemplates 
   MyLaunchConfiguration:
     Type: AWS::AutoScaling::LaunchConfiguration
     Properties:
